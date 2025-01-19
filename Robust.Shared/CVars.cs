@@ -1869,5 +1869,24 @@ namespace Robust.Shared
         /// </summary>
         public static readonly CVarDef<int> ToolshedNearbyEntitiesLimit =
             CVarDef.Create("toolshed.nearby_entities_limit", 5, CVar.SERVER | CVar.REPLICATED);
+
+
+        /// <summary>
+        /// Whether RGB peripheral control is enabled.
+        /// </summary>
+        public static readonly CVarDef<bool> RgbEnabled =
+            CVarDef.Create("rgb.enabled", true, CVar.CLIENTONLY | CVar.ARCHIVE);
+
+        /// <summary>
+        /// Host address for the OpenRGB SDK server.
+        /// </summary>
+        public static readonly CVarDef<string> RgbHost =
+            CVarDef.Create("rgb.host", "127.0.0.1", CVar.CLIENTONLY | CVar.ARCHIVE);
+
+        /// <summary>
+        /// Port for the OpenRGB SDK server.
+        /// </summary>
+        public static readonly CVarDef<int> RgbPort =
+            CVarDef.Create("rgb.port", 6742, CVar.CLIENTONLY | CVar.ARCHIVE);
     }
 }

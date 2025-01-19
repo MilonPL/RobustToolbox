@@ -8,6 +8,7 @@ using Robust.Client.GameObjects;
 using Robust.Client.GameStates;
 using Robust.Client.Graphics;
 using Robust.Client.Graphics.Clyde;
+using Robust.Client.Graphics.RGB;
 using Robust.Client.HWId;
 using Robust.Client.Input;
 using Robust.Client.Map;
@@ -102,6 +103,7 @@ namespace Robust.Client
             deps.Register<ProfViewManager>();
             deps.Register<IGamePrototypeLoadManager, GamePrototypeLoadManager>();
             deps.Register<NetworkResourceManager>();
+            deps.Register<IClientRGBManager, OpenRGBManager>();
 
             switch (mode)
             {
